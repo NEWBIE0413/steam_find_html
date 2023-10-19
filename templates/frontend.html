@@ -1,0 +1,13 @@
+<script src="https://unpkg.com/htmx.org@1.9.6"></script>
+<!-- have a button POST a click via AJAX -->
+
+<form hx-put="/find" hx-target="this" hx-swap="outerHTML">
+  <div class="form-group">
+    <label>게임이름:</label>
+    <input type="text" name="게임이름">
+  </div>
+</form>
+
+<div hx-target="result_form" hx-swap="outerHTML">
+  <div>검색어를 입력해주세요.</div>
+</div>
