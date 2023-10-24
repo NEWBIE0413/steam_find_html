@@ -11,7 +11,7 @@ application = Flask(__name__)
 
 passwd = "tjftmddl413**"
 
-KEY = "0FFABCFDC4DFBCBDE48CB28D09B17653"
+KEY = "스팀 키 입력"
 steam = Steam(KEY)
 
 @application.route('/', methods=['GET', 'POST'])
